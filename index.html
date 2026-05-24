@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <link rel="icon" href="data:,">
+
+    <title>shapes-reevo</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+  </head>
+  <body>
+  <div id="app">
+    <div class="text-fields">
+      <div class="text" id="shape-counter">Shapes: 0</div>
+      <div class="text" id="surface-area"><span id="area-text">Area: 0 px</span><sup>2</sup></div>
+    </div>
+
+    <div class="group">
+      <div class="controls">
+        <div class="panel">
+          <button type="button" class="btn" id="spsButtonMinus">−</button>
+          <span class="value" id="spsValue">1</span>
+          <button type="button" class="btn" id="spsButtonPlus">+</button>
+          <p class="controls-label" id="spsLabel">Shapes per second</p>
+        </div>
+      </div>
+
+      <div class="controls">
+          <div class="panel">
+            <button type="button" class="btn" id="gravityButtonMinus">−</button>
+            <span class="value" id="gravityValue">100</span>
+            <button type="button" class="btn" id="gravityButtonPlus">+</button>
+            <p class="controls-label" id="gravityLabel">Gravity controls</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
